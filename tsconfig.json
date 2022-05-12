@@ -6,7 +6,6 @@
         "forceConsistentCasingInFileNames": true,
         "isolatedModules": true,
         "resolveJsonModule": true,
-        "noEmit": true,
         "useDefineForClassFields": true,
         "module": "esnext",
         "target": "es6",
