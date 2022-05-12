@@ -1,10 +1,19 @@
 import React from "react";
+import { IBook } from "../models/Interfaces";
 
-export const Info = (): JSX.Element => {
+type Props = {
+    book: IBook
+};
+
+export const Info = ({book}: Props): JSX.Element => {
     return (
         <React.Fragment>
-            <h1>Info</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nostrum laboriosam placeat cumque voluptatem exercitationem, minima iure consectetur quos, magnam ea asperiores voluptatibus sunt et commodi illo ullam fugiat. Libero.</p>
+        <main key={book._id}>
+            <h1>{book.title}</h1>
+            <p>Name: {book.first} {book.last}</p>
+            <p>Age: {book.age}</p>
+            <p>Info: {book.info}</p>
+        </main>
         </React.Fragment>
     );
 };
