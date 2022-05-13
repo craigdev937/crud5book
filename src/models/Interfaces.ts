@@ -1,13 +1,10 @@
-export interface IData {
+export interface IBook {
+    _id?: string,
     title: string,
     first: string,
     last: string,
     age: number,
     info: string
-};
-
-export interface IBook extends IData {
-    _id: string
 };
 
 export interface IBookState {
